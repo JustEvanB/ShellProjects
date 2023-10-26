@@ -6,11 +6,11 @@ if [ "$(id -u)" -ne 0 ]; then
         exit 1
 fi
 
-ip link set FuckOff down
+ip link set wlan0 down
 ip link set enp45s0 down
-./macchanger -pA FuckOff
+./macchanger -pA wlan0
 ./macchanger -pA enp45s0
-ip link set FuckOff up
+ip link set wlan0 up
 ip link set enp45s0 up
 dhclient -r
 dhclient

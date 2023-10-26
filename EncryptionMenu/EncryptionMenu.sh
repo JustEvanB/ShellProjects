@@ -8,7 +8,7 @@ fi
 
 function catch {
 	clear
-	echo "Cya Bitch!"
+	echo "Cya!"
 	exit
 }
 
